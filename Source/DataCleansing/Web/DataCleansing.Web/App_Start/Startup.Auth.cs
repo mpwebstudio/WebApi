@@ -6,6 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using DataCleansing.Web.Models;
+using DataCleansing.Data;
+using DataCleansing.Models;
 
 namespace DataCleansing.Web
 {

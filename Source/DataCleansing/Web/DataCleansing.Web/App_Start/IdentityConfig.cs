@@ -11,6 +11,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using DataCleansing.Web.Models;
+using DataCleansing.Models;
+using DataCleansing.Data;
 
 namespace DataCleansing.Web
 {
