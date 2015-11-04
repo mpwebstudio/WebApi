@@ -1,30 +1,30 @@
-﻿using System;
+﻿using DataCleansing.Data.Repository;
+using DataCleansing.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AutoMapper.QueryableExtensions;
+using DataCleansing.Web.ViewModels;
 
 namespace DataCleansing.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private IRepository<BicCodeEurope> bicCodeEurope;
+
+        public HomeController(IRepository<BicCodeEurope> bicCodeEuropeData)
+        {
+            this.bicCodeEurope = bicCodeEuropeData;
+        }
+
         public ActionResult Index()
         {
-            return View();
+            var topCode = this.bicCodeEurope.All().ProjectTo<BicCodeEuropeViewModels>().Take(10);
+
+            return View(topCode);
         }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+               
     }
 }

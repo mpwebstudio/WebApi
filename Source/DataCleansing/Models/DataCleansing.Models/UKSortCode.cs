@@ -1,46 +1,48 @@
 ﻿namespace DataCleansing.Models
 {
+    using System;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    public class BicEurope
+    
+    public class UKSortCode
     {
         [Key]
-        public double Id { get; set; }
+        public int Id { get; set; }
         [Column(TypeName = "VARCHAR")]
-        [StringLength(10)]
+        [StringLength(2)]
         public string BankCode { get; set; }
         [Column(TypeName = "VARCHAR")]
-        [StringLength(10)]
+        [StringLength(6)]
         public string BranchCode { get; set; }
         [Column(TypeName = "VARCHAR")]
-        [StringLength(150)]
+        [StringLength(62)]
         public string BankName { get; set; }
         [Column(TypeName = "VARCHAR")]
-        [StringLength(55)]
+        [StringLength(85)]
         public string BranchName { get; set; }
         [Column(TypeName = "VARCHAR")]
-        [StringLength(80)]
+        [StringLength(82)]
         public string BranchAddress { get; set; }
         [Column(TypeName = "VARCHAR")]
-        [StringLength(140)]
+        [StringLength(28)]
         public string City { get; set; }
         [Column(TypeName = "VARCHAR")]
-        [StringLength(25)]
+        [StringLength(27)]
         public string Telephone { get; set; }
         [Column(TypeName = "VARCHAR")]
-        [StringLength(25)]
+        [StringLength(21)]
         public string Fax { get; set; }
         [Column(TypeName = "VARCHAR")]
-        [StringLength(23)]
+        [StringLength(14)]
         public string Country { get; set; }
         [Column(TypeName = "VARCHAR")]
         [StringLength(2)]
         public string IsoCode { get; set; }
         [Column(TypeName = "VARCHAR")]
-        [StringLength(12)]
+        [StringLength(255)]
         public string Swift { get; set; }
         [Column(TypeName = "VARCHAR")]
-        [StringLength(20)]
-        public string Postcode { get; set; }
+        [StringLength(8)]
+        public string PostCode { get; set; }
     }
 }
