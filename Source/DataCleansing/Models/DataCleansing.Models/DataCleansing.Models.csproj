@@ -54,10 +54,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddressCleansingHistory.cs" />
     <Compile Include="ApplicationUser.cs" />
     <Compile Include="BicCodeEurope.cs" />
     <Compile Include="BicEurope.cs" />
+    <Compile Include="BillingInformation.cs" />
+    <Compile Include="CardCleansingHistory.cs" />
+    <Compile Include="Credit.cs" />
+    <Compile Include="DailyTable.cs" />
+    <Compile Include="DeduplicateCleansingHistory.cs" />
+    <Compile Include="Digit.cs" />
+    <Compile Include="EmailCleansingHistory.cs" />
+    <Compile Include="FullDetail.cs" />
+    <Compile Include="History.cs" />
+    <Compile Include="IbanCleansingHistory.cs" />
+    <Compile Include="Invoice.cs" />
+    <Compile Include="Messages.cs" />
+    <Compile Include="PhoneCleansingHistory.cs" />
+    <Compile Include="Profile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RawSortCode.cs" />
+    <Compile Include="Subscribe.cs" />
+    <Compile Include="SwiftCode.cs" />
+    <Compile Include="TemporaryUser.cs" />
+    <Compile Include="UKAreaCode.cs" />
+    <Compile Include="UKSortCode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

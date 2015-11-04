@@ -12,18 +12,10 @@ namespace DataCleansing.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private IRepository<BicCodeEurope> bicCodeEurope;
-
-        public HomeController(IRepository<BicCodeEurope> bicCodeEuropeData)
-        {
-            this.bicCodeEurope = bicCodeEuropeData;
-        }
 
         public ActionResult Index()
         {
-            var topCode = this.bicCodeEurope.All().ProjectTo<BicCodeEuropeViewModels>().Take(10);
-
-            return View(topCode);
+            return View();
         }
                
     }
