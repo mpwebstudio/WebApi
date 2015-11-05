@@ -24,6 +24,16 @@ textarea {
     max-width: 280px;
 }
 
+@font-face {
+    font-family: h1Family;
+    src: url(Fonts/TCCEB.TTF);
+}
+
+fontTCCEB{
+    font-family:h1Family;
+}
+
+
 .colorBlue{
     background-color:#0b2025;
 }
@@ -32,13 +42,115 @@ textarea {
     color:red;
 }
 
-.slogan{
-    font-family: h1Family;
-    font-size:4em;
+.colorWhite{
     color:white;
 }
 
-@font-face {
+.slogan{
     font-family: h1Family;
-    src: url(Fonts/TCCEB.TTF);
+    font-size:5em;
+    color:white;
+}
+
+
+
+.paddingBottom20{
+    padding-bottom:20px;
+}
+
+.noBorder{
+    border-color:#0b2025;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.marginRight10{
+    margin-right:10px;
+    
+}
+
+#registerLink,#loginLink,#loggedUser,#logOutUser{
+    padding:10px;
+    margin-top:10px;
+}
+
+#loginLink:hover{
+    background-color: #4cae4c;
+    border-color: #4cae4c;
+}
+
+#registerLink:hover{
+    background-color: #2e6da4;
+    border-color: #2e6da4;
+}
+
+#loggedUser:hover{
+    background-color: #4cae4c;
+    border-color: #4cae4c;
+}
+
+#logOutUser:hover{
+    background-color:#d43f3a;
+}
+
+@media (min-width:251px) and (max-width: 300px) {
+    body{font-size: 10px;}
+    .slogan{font-size:1.5em; margin-top:60px;}
+    #registerLink,#loggedUser{margin-right:0}
+    
+}
+
+@media (min-width:301px) and (max-width: 350px) {
+    body{font-size: 10px;}
+    .slogan{font-size:3em; margin-top:60px;}
+    #registerLink,#loggedUser{margin-right:0}
+}
+
+@media (min-width:351px) and (max-width: 400px) {
+    body{font-size: 14px;}
+    .slogan{font-size:2.5em; margin-top:10px;}
+    #registerLink,#loggedUser{margin-right:0}
+}
+
+@media (min-width:401px) and (max-width: 450px) {
+    body{font-size: 14px;}
+    .slogan{font-size:2.6em;}
+    #registerLink,#loggedUser{margin-right:0}
+}
+
+@media (min-width:451px) and (max-width: 500px) {
+    body{font-size: 14px;}
+    .slogan{font-size:3em;}
+    #registerLink,#loggedUser{margin-right:0}
+}
+
+@media (min-width:501px) and (max-width: 550px) {
+    body{font-size: 14px;}
+    .slogan{font-size:3.6em;}
+    #registerLink,#loggedUser{margin-right:0}
+}
+
+@media (min-width:551px) and (max-width: 600px) {
+    body{font-size: 14px;}
+    .slogan{font-size:4.1em;}
+    #registerLink,#loggedUser{margin-right:0}
+}
+
+@media (min-width:601px) and (max-width: 650px) {
+    body{font-size: 14px;}
+    .slogan{font-size:4.5em;}
+    #registerLink,#loggedUser{margin-right:0}
+}
+
+@media (min-width:651px) and (max-width: 700px) {
+    body {
+        font-size: 14px;
+    }
+
+    .slogan {
+        font-size: 4.8em;
+    }
+    #registerLink{margin-right:0}
 }
