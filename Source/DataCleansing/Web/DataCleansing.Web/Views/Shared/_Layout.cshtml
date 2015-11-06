@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -72,23 +72,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 col-md-2 col-lg-2 col-xs-12">
-                        <p><b class="text-center">Stay in Contact</b></p>
+                    <div class="col-sm-2 col-md-2 col-lg-2 col-xs-12 text-center">
+                        <p><b>Stay in Contact</b></p>
                         <div class="col-md-12 col-xs-7 override-center">
                             <a target="_blank" href="https://www.facebook.com/DataCleansingNet"><img src="~/Content/img/facebook.png" /></a> <a target="_blank" href="https://plus.google.com/"><img src="~/Content/img/google.png" /></a> <a target="_blank" href="https://www.twitter.com/"><img src="~/Content/img/twitter.png" /></a>
                         </div>
                         <img src="~/Content/img/payPal.png" class="text-center" />
                     </div>
                 </div>
-                <div class="row marginTop50">
-                    <div class="col-sm-6">
-                        <p>© @DateTime.Now.Year Data Cleansing</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="terms"><a href="~/Home/TermsofUse">Therms and conditions</a> <span>|</span> <a href="/ContactUs">Contact us</a></p>
-                    </div>
-                </div>
+                <div class="marginTop50"></div>
             </footer>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-copyright marginTop50 colorDarkBlue">
+            <div class="col-sm-6">
+                <p>© @DateTime.Now.Year Data Cleansing</p>
+            </div>
+            <div class="col-sm-6">
+                <p class="terms"><a href="~/Home/TermsofUse">Therms and conditions</a> <span>|</span> <a href="/ContactUs">Contact us</a></p>
+            </div>
         </div>
     </div>
 
