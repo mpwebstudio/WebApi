@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewBag.Title = "Services - Data Cleansing quality data solutions for all business";
+}
+
+<div class="bgColorBlue">
+    <div class="text-center slogan">
+        <em>SERV<span class="colorRed">I</span>CES</em>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row marginTop50s">
+        <div class="col-md-4 mobileMarginTop20">
+            <div class="col-md-1 col-xs-2">
+                <span class="glyphicon glyphicon-road fontSize30 colorGlyphicon"></span>
+            </div>
+            <div class="text-center">
+                <span class="fontTCCEB fontSize30 colorDarkBlue">Address Validation</span>
+            </div>
+            <p>Check a single address. Simply type your address and system will return you a correct one if you have any mistakes. This service is also suiteble for an online shops owner. Avoid wrong typed addresses by clients and simply save time and money!</p>
+            <div class="text-center">
+                @Html.ActionLink("API Integration", "Address", "Integration", routeValues: null, htmlAttributes: new { @class = "otherHref" }) | <a href="/AddressValidation" class="otherHref">Demo</a>
+            </div>
+        </div>
+        <div class="col-md-4 mobileMarginTop20">
+            <div class="col-md-1 col-xs-2">
+                <span class="glyphicon glyphicon-edit fontSize30 colorGlyphicon"></span>
+            </div>
+            <div class="text-center">
+                <span class="fontTCCEB fontSize30 colorDarkBlue">Address Cleansing</span>
+            </div>
+            <p>
+                Accurate address data is key for successful business.
+                Online address validation is one of the services, which we provide in real time and improves address data quality. Our software provides validation of postal addresses in UK from a post code or just partial address
+            </p>
+            <div class="text-center">
+                <a href="/AddressCleansing" class="otherHref">Demo</a>
+            </div>
+        </div>
+        <div class="col-md-4 mobileMarginTop20">
+            <div class="col-md-1 col-xs-2">
+                <span class="glyphicon glyphicon-send fontSize30 colorGlyphicon"></span>
+            </div>
+            <div class="text-center">
+                <span class="fontTCCEB fontSize30 colorDarkBlue">Email Validation</span>
+            </div>
+            <p>Email addresses are one of the most valuable assets in each business, therefore we provide online validation and batch email cleansing. With accurate emails, you'll ensure that your emails are reaching their intended recipients, and increase your delivery rates.</p>
+            <div class="text-center">
+                @Html.ActionLink("API Integration", "Email", "Integration", routeValues: null, htmlAttributes: new { @class = "otherHref" }) | <a href="/EmailValidation" class="otherHref">Demo</a>
+            </div>
+        </div>
+    </div>
+    <div class="row marginTop50s">
+        <div class="col-md-4 mobileMarginTop20">
+            <div class="col-md-1 col-xs-2">
+                <span class="glyphicon glyphicon-import fontSize30 colorGlyphicon"></span>
+            </div>
+            <div class="text-center">
+                <span class="fontTCCEB fontSize30 colorDarkBlue">Email Cleansing</span>
+            </div>
+            <p>Email cleansing is designed to determine and rectify errors in each part of the email address. The full service can be access through our application. Simple upload your CSV file containing addresses witch you woulkd like to cleanse and in a minutes you would have an accurate email data base.</p>
+            <div class="text-center">
+                <a href="/EmailCleansing" class="otherHref">Demo</a>
+            </div>
+        </div>
+        <div class="col-md-4 mobileMarginTop20">
+            <div class="col-md-1 col-xs-2">
+                <span class="glyphicon glyphicon-random fontSize30 colorGlyphicon"></span>
+            </div>
+            <div class="text-center">
+                <span class="fontTCCEB fontSize30 colorDarkBlue">De-duplication</span>
+            </div>
+            <p>Your organization's data contains valuable information that your organization needs in order to conduct business, whether it is managing customers and products, managing operations, evaluating corporate performance, or providing business intelligence. Duplicate data leads data integrity problems.</p>
+            <div class="text-center">
+                <a href="/Deduplication" class="otherHref">Demo</a>
+            </div>
+        </div>
+        <div class="col-md-4 mobileMarginTop20">
+            <div class="col-md-1 col-xs-2">
+                <span class="glyphicon glyphicon-shopping-cart fontSize30 colorGlyphicon"></span>
+            </div>
+            <div class="text-center">
+                <span class="fontTCCEB fontSize30 colorDarkBlue">Card Payment Validation</span>
+            </div>
+            <p>Our Card payment validation solutions enable the managing of large volumes of payments, assuring faster and accurate payments without any inconvenience to you customers, suppliers or business partners. It takes only a few minutes, for our services to be installed and integrated.</p>
+            <div class="text-center">
+                @Html.ActionLink("API Integration", "Card", "Integration", routeValues: null, htmlAttributes: new { @class = "otherHref" }) | <a href="/CardValidation" class="otherHref">Demo</a>
+            </div>
+        </div>
+    </div>
+    <div class="row marginTop50s">
+        <div class="col-md-4 mobileMarginTop20">
+            <div class="col-md-1 col-xs-2">
+                <span class="glyphicon glyphicon-import fontSize30 colorGlyphicon"></span>
+            </div>
+            <div class="text-center">
+                <span class="fontTCCEB fontSize30 colorDarkBlue">Iban Validation</span>
+            </div>
+            <p>The IBAN system’s reliability and accuracy reduces errors, delays and facilitate faster payment processing. Our Software is designed to perform algorithmic checks in order to determine and validate whether an IBAN you collect or hold in real time is accurate</p>
+            <div class="text-center">
+                @Html.ActionLink("API Integration", "Iban", "Integration", routeValues: null, htmlAttributes: new { @class = "otherHref" }) | <a href="/IbanValidation" class="otherHref">Demo</a>
+            </div>
+        </div>
+        <div class="col-md-4 mobileMarginTop20">
+            <div class="col-md-1 col-xs-2">
+                <span class="glyphicon glyphicon-random fontSize30 colorGlyphicon"></span>
+            </div>
+            <div class="text-center">
+                <span class="fontTCCEB fontSize30 colorDarkBlue">UK Telephone Cleansing</span>
+            </div>
+            <p>In order to prevent fraud, spam and other dubious activities phone numbers verification plays a key role. This service not only keeps up to standard the quality of your data, but also improves communication with your customers and business partners.</p>
+            <div class="text-center">
+                <a href="/TelephoneCleansing" class="otherHref">Demo</a>
+            </div>
+        </div>
+        <div class="col-md-4 mobileMarginTop20">
+            <div class="col-md-1 col-xs-2">
+                <span class="glyphicon glyphicon-shopping-cart fontSize30 colorGlyphicon"></span>
+            </div>
+            <div class="text-center">
+                <span class="fontTCCEB fontSize30 colorDarkBlue">Swift Validation</span>
+            </div>
+            <p>SWIFT code is unique identification code for a particular bank. These codes are used for money transfers between the banks, and particularly for international wire transfers. Accurate SWIFT codes allow businesses to carry out finances globally without any difficulty.</p>
+            <div class="text-center">
+                @Html.ActionLink("API Integration", "Bic", "Integration", routeValues: null, htmlAttributes: new { @class = "otherHref" }) | <a href="/BicValidation" class="otherHref">Demo</a>
+            </div>
+        </div>
+    </div>
+    <hr class="style-two" />
+    <h2 class="fontTCCEB"><em>Other serv<span class="colorRed">i</span>ces</em></h2>
+    <div class="row">
+        <div class="col-md-3 text-center">
+            <span class="glyphicon glyphicon-phone pull-left fontSize30 colorGlyphicon"></span>
+            <span class="fontSize18">UK Telephone Validation</span>
+            <br />
+            @Html.ActionLink("API Integration", "Telephone", "Integration", routeValues: null, htmlAttributes: new { @class = "otherHref" }) | <a href="/TelephoneValidation" class="otherHref">Demo</a>
+        </div>
+    </div>
+</div>
+<div class="marginTop50"></div>

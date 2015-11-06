@@ -1,0 +1,148 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Data Cleansing SPA Application</title>
+    <link href="http://handsontable.com//bower_components/handsontable/dist/handsontable.full.min.css" rel="stylesheet">
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/normalize.css" rel="stylesheet" />
+    <link href="~/Content/appStyle.css" rel="stylesheet" />
+
+</head>
+<body class="scotchifield" ng-app="dataApp" ng-cloak>
+    <div class="scotch-panel-wrapper" style="position: relative; overflow: hidden; width: 100%;">
+        <div class="scotch-panel-canvas" style="position: relative; height: 100%; width: 100%; -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px); -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: all 300ms ease; transition: all 300ms ease;">
+            <div class="framework-container">
+                <div class="app-header">
+                    <header class="container">
+                        <div class="row row-page">
+                            <div class="navbar-header col-md-4 col-sm-4">
+                                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                                <a href="/" title="Data cleansing service">
+                                    <img src="~/Content/img/logoAcc.png" alt="Data cleansing" style="margin-top:5px;" />
+                                </a>
+
+                            </div>
+                            <nav id="bs-navbar" class="collapse navbar-collapse fontFamily main">
+                                <div id="main">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href="#/profile" class="fontFamily">
+                                                <i class="glyphicon glyphicon-user"></i>
+                                                Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#/services" class="fontFamily">
+                                                <i class="glyphicon glyphicon-compressed"></i>
+                                                Services
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#/topUp" class="fontFamily">
+                                                <i class="glyphicon glyphicon-upload"></i>
+                                                Top Up
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#/editBilling" class="fontFamily">
+                                                <i class="glyphicon glyphicon-book"></i>
+                                                Billing information
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#/reporting" class="fontFamily">
+                                                <i class="glyphicon glyphicon-folder-open"></i>
+                                                Support
+                                            </a>
+                                        </li>
+                                        <li>
+                                            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                                            {
+                                                @Html.AntiForgeryToken()
+                                                <a href="javascript:document.getElementById('logoutForm').submit()" class="fontFamily">
+                                                    <i class="glyphicon glyphicon-off"></i>
+                                                    Log Off
+                                                </a>
+                                            }
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="container">
+                    <div class="overflow">
+                        <div ng-view>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://handsontable.com//bower_components/handsontable/dist/handsontable.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src=" ~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="~/Scripts/lib/angular-resource.min.js"></script>
+    <script src="~/Scripts/lib/angular-route.min.js"></script>
+    <script src="~/Scripts/lib/upload.js"></script>
+    <script src="~/Scripts/lib/ng-file-upload.min.js"></script>
+    <script src="~/Scripts/lib/ng-file-upload-shim.min.js"></script>
+    <script src="~/Scripts/lib/checklist-model.js"></script>
+    <script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
+    <script src="~/app/app.js"></script>
+    <script src="~/app/controller/ProfileController.js"></script>
+    <script src="~/app/controller/CreditsController.js"></script>
+    <script src="~/app/controller/BillingController.js"></script>
+    <script src="~/app/controller/EditUserController.js"></script>
+    <script src="~/app/controller/EditBIllingController.js"></script>
+    <script src="~/app/controller/InvoiceController.js"></script>
+    <script src="~/app/controller/BuyController.js"></script>
+    <script src="~/app/controller/SingleAddressController.js"></script>
+    <script src="~/app/controller/SingleEmailValidationController.js"></script>
+    <script src="~/app/controller/FileUploadController.js"></script>
+    <script src="~/app/controller/IbanFileUploadController.js"></script>
+    <script src="~/app/controller/SingleIbanController.js"></script>
+    <script src="~/app/controller/SingleBicController.js"></script>
+    <script src="~/app/controller/SingleCardValidationController.js"></script>
+    <script src="~/app/controller/CardUploadController.js"></script>
+    <script src="~/app/controller/SinglePhoneController.js"></script>
+    <script src="~/app/controller/PhoneUploadController.js"></script>
+    <script src="~/app/controller/EmailUploadController.js"></script>
+    <script src="~/app/controller/DeduplicateController.js"></script>
+    <script src="~/app/factories/billingData.js"></script>
+    <script src="~/app/factories/userData.js"></script>
+    <script src="~/app/factories/creditsData.js"></script>
+    <script src="~/app/factories/editUserData.js"></script>
+    <script src="~/app/factories/editBillingData.js"></script>
+    <script src="~/app/factories/invoiceData.js"></script>
+    <script src="~/app/factories/singleAddressData.js"></script>
+    <script src="~/app/factories/getDirectoryData.js"></script>
+    <script src="~/app/factories/singleIbanData.js"></script>
+    <script src="~/app/factories/singleBicData.js"></script>
+    <script src="~/app/factories/singleCardData.js"></script>
+    <script src="~/app/factories/singlePhoneData.js"></script>
+    <script src="~/app/factories/singleEmailData.js"></script>
+    <script src="~/app/factories/deduplicateData.js"></script>
+    <script src="~/Scripts/ui-bootstrap-0.14.2.min.js"></script>
+</body>
+</html>
