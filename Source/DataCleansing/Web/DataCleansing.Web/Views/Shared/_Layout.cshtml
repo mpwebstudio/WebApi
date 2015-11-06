@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top colorBlue noBorder">
+    <div class="navbar navbar-inverse navbar-fixed-top bgColorBlue noBorder">
         <div class="container">
             <div class="row">
                 <div class="navbar-header">
@@ -24,9 +24,9 @@
                     <ul class="nav navbar-nav">
                         <li>@Html.ActionLink("SERVICES", "Services", "Home")</li>
                         <li>@Html.ActionLink("APIS", "Index", "Integration")</li>
-                        @if(User.Identity.IsAuthenticated)
+                        @if (User.Identity.IsAuthenticated)
                         {
-                            <li>@Html.ActionLink("APPLICATION","Index","Application")</li>
+                            <li>@Html.ActionLink("APPLICATION", "Index", "Application")</li>
                         }
                         <li>@Html.ActionLink("PAYMENT", "Index", "Payment")</li>
                         <li>@Html.ActionLink("CONTACT US", "Index", "ContactUs")</li>
@@ -36,12 +36,60 @@
             </div>
         </div>
     </div>
-    
-        @RenderBody()
-    <div class="container body-content">
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+
+    @RenderBody()
+
+    <div class="footerWrapper">
+        <div class="container body-content marginTop50">
+            <footer>
+                <div class="row">
+                    <div class=" col-sm-2 col-md-2 col-lg-2 pull-left no-center">
+                        <p><b>DATA VALIDATION</b></p>
+                        Address Validatio<br />
+                        Email Validation<br />
+                        Card Payment Validation<br />
+                        Swift Validation<br />
+                        Iban Validation<br />
+                        Telephone Validation<br />
+                    </div>
+                    <div class=" col-sm-2 col-md-2 col-lg-2 col-xs-6 pull-left no-center">
+                        <p><b>DATA CLEANSING</b></p>
+                        Address Cleansing<br />
+                        Email Cleansing<br />
+                        Telephone Cleansing<br />
+                        De-duplication<br />
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4 col-xs-12 mPadding10">
+                        <div class="newsletter-area">
+                            <p><b>Subscribe to Data Cleansing Newsletter</b></p>
+                            <p class="hidden-xs">Get the latest deals delivered to your inbox</p>
+                            <div class="newsletter">
+                                <input type="email" placeholder="Enter your email..." id="subscribe_mail">
+                                <button onclick="subscribe();">OK</button>
+                                <div class="clearfix"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 col-xs-12">
+                        <p><b class="text-center">Stay in Contact</b></p>
+                        <div class="col-md-12 col-xs-7 override-center">
+                            <a target="_blank" href="https://www.facebook.com/DataCleansingNet"><img src="~/Content/img/facebook.png" /></a> <a target="_blank" href="https://plus.google.com/"><img src="~/Content/img/google.png" /></a> <a target="_blank" href="https://www.twitter.com/"><img src="~/Content/img/twitter.png" /></a>
+                        </div>
+                        <img src="~/Content/img/payPal.png" class="text-center" />
+                    </div>
+                </div>
+                <div class="row marginTop50">
+                    <div class="col-sm-6">
+                        <p>© @DateTime.Now.Year Data Cleansing</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="terms"><a href="~/Home/TermsofUse">Therms and conditions</a> <span>|</span> <a href="/ContactUs">Contact us</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

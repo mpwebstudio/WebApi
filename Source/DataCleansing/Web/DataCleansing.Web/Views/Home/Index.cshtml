@@ -2,8 +2,7 @@
     ViewBag.Title = "Data Cleansing quality data solutions for all business";
 }
 
-
-<div class="colorBlue">
+<div class="bgColorBlue">
     <div class="container">
         <div class="row">
             <div class="text-center slogan col-xs-12">
@@ -12,6 +11,57 @@
         </div>
         <div class="row text-center colorWhite paddingBottom20">
             Dirty data lead to poor productivity, which may lead to poor sales. Don’t let your data get that dirty. Try our self-service platform for free!
+        </div>
+    </div>
+</div>
+
+<div class="container marginTop50">
+    <div class="row">
+        <div class="col-md-4 col-xs-12">
+            <p class="thumbnail"><a href="~/AddressValidation"><img src="~/Content/img/addressConvert.jpg" /></a></p>
+        </div>
+        <div class="col-md-8 col-xs-12">
+            <h3><a href="~/AddressValidation">Address finder - faster way to enter and validate UK addresses</a></h3>
+            <p>Accurate address data is key for successful business.</p>
+            <p>Through correct addressing, you'll improve customer satisfaction and keep in touch with them more effectively. You'll also improve customer and database analytics, standardise data capture, increase return on investment.</p>
+            <ul>
+                <li>avoid frustration and loss of productivity</li>
+                <li>maximize the efficiency of your marketing campaigns</li>
+                <li>easy to implement plug-&-play website and desktop options</li>
+                <li>validate addresses at capture time</li>
+                <li>consistently format addresses reducing the likelihood of human error</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row marginTop50 clearfix">
+        <div class="col-sm-8 col-md-8">
+            <h3><a href="~/Deduplicate#/deduplicate">Data deduplication - identify and merge duplicate records ensuring data quality improvement</a></h3>
+            <p>All databases have duplicated entries and sometimes they can be difficult to identify. Our high performance deduplication solutions identify tricky matches using advanced fuzzy matching technology and predefined match methods. Save time, resources and money.</p>
+            <p>Free from duplicate information lead to higher data reliability/trustworthiness, improve the response to your marketing many times over. Precise basis for all reporting purposes and risk management</p>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <p class="thumbnail"><a href="~/Deduplicate#/deduplicate"><img src="~/Content/img/deduplicate.jpg" /> </a></p>
+        </div>
+    </div>
+    <div class="row clearfix marginTop50">
+        <div class="col-sm-4 col-md-4">
+            <p class="thumbnail"><a href="#" title=""><img src="~/Content/img/cardValidation.jpg" alt="#" title=""></a></p>
+        </div><!-- /col -->
+        <div class="col-sm-8 col-md-8">
+            <h3><a class="~/CardValidation">Payment Validation - practical solution for online shops and telephone payments</a></h3>
+            <p>With our instant Payment Validation with highlite if a payment details are wrong or correct you can offer to your clients easy and plesent payments. Save clients and your time when make a telephone payment becouse time is money right?</p>
+            <p>Combine with Address Validation you can make sure that will avoid all misspell addresses. Bad data lead to lost revenue and uneccessary costs. Don't let yours be one of them. </p>
+        </div>
+    </div>
+</div>
+
+<div class="row-signup marginTop50">
+    <div class="container">
+        <div class="col-lg-9">
+            <div class="colorWhite fontSize18">We offer you compleatly <span class="colorBlue">free and no obligation credits</span> to try the full functionality of our services!</div>
+        </div>
+        <div class="col-lg-3">
+            <p class="trial-signup">@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { @class = "license" })</p>
         </div>
     </div>
 </div>
